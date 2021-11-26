@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+  }
+  
+  /* Track */
+ /* ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); 
+  } */
+   
+  /* Handle */
+  /* ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+  } */

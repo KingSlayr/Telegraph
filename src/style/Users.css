@@ -1,0 +1,45 @@
+.users{
+    margin-top: 10vh;
+    width: 99vw;
+    height: 90vh;
+    padding: 0.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.chatboxContainer{
+    position: absolute;
+    width: 48.5vw;
+    left: 25.25vw;
+    top: 0.5vw;
+    height: calc(100vh - 4.4rem - 1vw);
+    background-color: white;
+}
+
+.chatboxBackground{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1130px) {
+    .chatboxContainer{
+        width: 59.375vw;
+        left: 18.8125vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .users{
+        flex-direction: column;
+    }
+    .chatboxContainer{
+        width: 98vw;
+        left: 1vw;
+        height: calc(100vh - 4.4rem);
+    }
+}

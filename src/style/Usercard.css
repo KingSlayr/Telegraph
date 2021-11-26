@@ -1,0 +1,73 @@
+.usercard{
+    width: 15.5vw;
+    height: 15.5vw;
+    margin: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid rgba(0, 0, 0, 0.555); */
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.usercard img{
+    max-width: 100%;
+    height: 60%;
+    align-self: center;
+}
+
+.usercard div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.background{
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.timeUsercard{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px;
+    background-color: rgb(204, 204, 204);
+}
+
+@media only screen and (max-width: 1130px) {
+    .usercard{
+        width: 23.75vw;
+        height: 23.75vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .usercard{
+        width: 32vw;
+        height: 32vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .usercard{
+        width: 98vw;
+        height: 32vw;
+        flex-direction: row;
+    }
+    .usercard img{
+        max-width: 30%;
+        height: 99%;
+        align-self: center;
+    }
+    .background{
+        display: none;
+    }
+}

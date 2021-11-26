@@ -1,0 +1,96 @@
+.chatbox{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox_head{
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+
+.chatbox_head i {
+    font-size: 4vh;
+    margin: 0.25em;
+    cursor: pointer;
+    color: tomato;
+    justify-self: flex-end;
+}
+
+.chatbox_head img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chatbox_head div{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    overflow: hidden;
+    flex: 1;
+}
+
+.chatbox_middle{
+    background-color: tan;
+    height: 72vh;
+    width: 99%;
+    overflow: auto;
+}
+
+.chatIncoming{
+    margin: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+}
+.chatOutgoing{
+    margin: 0.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chatIncoming div{
+    width: fit-content;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.chatOutgoing div{
+    width: fit-content;
+    background-color: tomato;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.chatbox_foot{
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatbox_foot input{
+    height: 6vh;
+    margin: 0.5em;
+    flex: 1;
+    outline: 1px solid rgba(0, 0, 0, 0.11);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    font-size: 3vh;
+    font-family: 'Space Mono', monospace;
+}
+
+.chatbox_foot i{
+    font-size: 6vh;
+    margin: 0.25em;
+    cursor: pointer;
+    color: tomato;
+}
