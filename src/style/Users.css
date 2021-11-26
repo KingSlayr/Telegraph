@@ -1,8 +1,8 @@
 .users{
-    margin-top: 10vh;
     width: 99vw;
     height: 90vh;
-    padding: 0.5vw;
+    margin: 0.5vw;
+    margin-top: 9vh;
     display: flex;
     flex-wrap: wrap;
     position: relative;
