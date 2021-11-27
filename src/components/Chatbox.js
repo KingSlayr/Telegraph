@@ -11,7 +11,7 @@ const uniqueString = (str1,str2) =>{
     }
 }
 
-export default function Chatbox({closeChatbox,currentChat,currentUser}) {
+export default function Chatbox({setroute,setprofileUser,closeChatbox,currentChat,currentUser}) {
     const [message, setmessage] = useState('')
     const [chats, setchats] = useState({})
     const [messages, setmessages] = useState([])
@@ -64,7 +64,7 @@ export default function Chatbox({closeChatbox,currentChat,currentUser}) {
     return (
         <div className='chatbox'>
             <div className='chatbox_head'>
-                <img src={`https://avatars.dicebear.com/api/identicon/${currentChat.uid}.svg`} alt="" />
+                <img onClick={()=>{setprofileUser(currentChat);setroute('/profile')}} src={currentChat.dp?currentChat.dp:`https://avatars.dicebear.com/api/identicon/${currentChat.uid}.svg`} alt="" />
                 <div>
                     <span>{currentChat.name}</span>
                     <span></span>

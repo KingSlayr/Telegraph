@@ -6,10 +6,9 @@ import {db} from '../firebase'
 import Usercard from './Usercard'
 import Chatbox from './Chatbox'
 
-export default function Users() {
+export default function Users({currentUser,setprofileUser,setroute}) {
     const [chatbox, setchatbox] = useState(false)
     const [users, setusers] = useState([])
-    const [currentUser, setcurrentUser] = useState(null)
     const [currentChat, setcurrentChat] = useState(null)
 
     const openChatbox = () =>{
@@ -17,14 +16,11 @@ export default function Users() {
         document.querySelector('.users').style.overflow = 'hidden'
         setchatbox(true);
     }
+    
     const closeChatbox = () =>{
         document.querySelector('.users').style.overflow = 'auto'
         setchatbox(false);
     }
-
-    useEffect(() => {
-        setcurrentUser(JSON.parse(window.localStorage.getItem('telegraphuser')))
-    }, [])
 
     useEffect(async () => {
         if(currentUser){
@@ -51,7 +47,7 @@ export default function Users() {
                 chatbox && 
                 <div className='chatboxBackground'>
                     <div className='chatboxContainer'>
-                        <Chatbox currentChat={currentChat} currentUser={currentUser} closeChatbox={closeChatbox}/>
+                        <Chatbox setroute={setroute} setprofileUser={setprofileUser} currentChat={currentChat} currentUser={currentUser} closeChatbox={closeChatbox}/>
                     </div>
                 </div> 
             }

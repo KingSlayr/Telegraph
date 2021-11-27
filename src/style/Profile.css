@@ -1,0 +1,115 @@
+.profile{
+    margin-top: 10vh;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile_back{
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.profile_div{
+    padding: 1em;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_div img{
+    max-height: 50vh;
+    max-width: 90vw;
+}
+
+.profile_div span{
+    font-weight: bold;
+}
+
+.profileEditBtn{
+    font-family: 'Space Mono', monospace;
+    background-color: white;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    border: 1px rgba(0, 0, 0, 0.486) solid;
+    padding: 0.5em;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.editScreen{
+    position: absolute;
+    top: -10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 10;
+}
+
+.profilEditDiv{
+    background-color: white;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    /* position: absolute; */
+}
+
+.profilEditDiv div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profilEditDiv input{
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.inputFile{
+    font-family: 'Space Mono', monospace;
+    background-color: white;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    border: 1px rgba(0, 0, 0, 0.486) solid;
+    padding: 0.5em;
+    cursor: pointer;
+    flex: 1;
+}
+
+.submitedit{
+    font-family: 'Space Mono', monospace;
+    background-color: white;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    border: 1px rgba(0, 0, 0, 0.486) solid;
+    padding: 0.5em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.profileLoader{
+    position: absolute;
+    top: -10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 10;
+}
+
+.profileLoader img{
+    width: 3em;
+}
